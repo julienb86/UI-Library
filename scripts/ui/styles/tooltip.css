@@ -1,0 +1,40 @@
+.tooltip {
+  position: relative;
+  display: inline-block;
+  color: orange;
+  cursor: help;
+  border-bottom: 1px dotted orange;
+}
+
+.tip {
+  visibility: hidden;
+  position: absolute;
+  border-radius: 5px;
+  background-color: orange;
+  color: white;
+  width: 150px;
+  bottom: 120%;
+  left: 0%;
+  text-align: center;
+  padding: 5px 0;
+
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.tip.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tip:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -4px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: orange;
+}
