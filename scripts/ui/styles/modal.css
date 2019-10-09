@@ -1,0 +1,22 @@
+.modal {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.modal_container {
+  height: 250px;
+  width: 75%;
+  background-color: white;
+  margin: 10% auto;
+  padding: 10px;
+}
+
+.btn {
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
